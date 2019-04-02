@@ -12,7 +12,7 @@ public class StartPage {
 	private WebDriver driver;
 	
 	@FindBy(xpath = "//div[@class=\"auth-bar__item auth-bar__item--text\"]")
-	private WebElement enterBtn;
+	private WebElement entryBtn;
 	
 	@FindBy(xpath = "//*[@id=\"userbar\"]")
 	private WebElement userBar;
@@ -22,8 +22,8 @@ public class StartPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public AuthorizationPopUp clickEnterBtn() {
-		enterBtn.click();
+	public AuthorizationPopUp clickEntryBtn() {
+		entryBtn.click();
 		return new AuthorizationPopUp(driver);
 	}
 	

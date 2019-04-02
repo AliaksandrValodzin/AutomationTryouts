@@ -27,7 +27,7 @@ public class AuthorizationPageTest {
 		driver.get("https://www.onliner.by/");
 	
 		StartPage page = new StartPage(driver);
-		AuthorizationPopUp popUp = page.clickEnterBtn();
+		AuthorizationPopUp popUp = page.clickEntryBtn();
 		popUp.fillEmailField(EMAIL);
 		popUp.fillPasswordField(PASSWORD);
 		popUp.clickEntryBtn();
