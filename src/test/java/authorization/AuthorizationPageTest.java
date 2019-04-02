@@ -21,8 +21,6 @@ public class AuthorizationPageTest {
 	@Test
 	public void authorizationTest() {
 		
-		LOG.info("start");
-		
 		System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -35,7 +33,7 @@ public class AuthorizationPageTest {
 		popUp.clickEntryBtn();
 		
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			LOG.error(e.getMessage());
 		}
