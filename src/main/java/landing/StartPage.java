@@ -14,6 +14,9 @@ public class StartPage {
 	@FindBy(xpath = "//div[@class=\"auth-bar__item auth-bar__item--text\"]")
 	private WebElement enterBtn;
 	
+	@FindBy(xpath = "//*[@id=\"userbar\"]")
+	private WebElement userBar;
+	
 	public StartPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
